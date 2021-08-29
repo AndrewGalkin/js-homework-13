@@ -1,6 +1,6 @@
 import {refs} from "./refs";
 // import {createLi} from "./templates-string-helper";
-import imagesList from "/templates/list.hbs"
+import imageList from "/templates/list.hbs"
 
 const api = {
   searchQuery: '',
@@ -18,8 +18,18 @@ export function ImagesApiService(e) {
   const value = refs.input.value;
   fetch(MAIN_URL)
     .then(response => response.json())
-    .then(data => refs.gallery.insertAdjacentHTML("afterbegin", imagesList(data)))
+    .then(({hits}) => {
+      incrementPage()
+      return hits
+    })
+    .then((data) => refs.gallery.insertAdjacentHTML("beforeend", imageList(data)))
     .catch(error => console.log(error))
   refs.input.value = "";
+
+  const incrementPage = () => {
+    api.page += 1;
+
+  }
 }
+
 
