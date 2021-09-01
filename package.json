@@ -1,12 +1,13 @@
 {
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
-    "parcel-plugin-nuke-dist": "^1.0.1"
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "sass": "^1.38.2"
   },
   "main": "main.js",
   "license": "ISC",
   "scripts": {
-    "dev": "parcel index.html -p 9999",
+    "dev": "parcel index.html -p 4444",
     "build": "parcel build index.html --public-url /js-homework-13/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
