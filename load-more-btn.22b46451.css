@@ -1,0 +1,2 @@
+.is-visible{display:flex}.is-invisible{display:none}.btn-more{width:250px;justify-content:center;margin:0 auto 30px;height:40px;align-items:center;border-radius:25px;border:transparent;background-color:transparent;border-bottom:2px solid #fff;box-shadow:0 7px 29px 0 rgba(255,127,80,.6);transform:scale(1)}.btn-more,.btn-more:hover{transition:.5s ease-in-out}.btn-more:hover{border-bottom:2px solid coral;transform:scale(1.03)}.btn-more span{font-size:1.3em;color:#fff}
+/*# sourceMappingURL=/js-homework-13/load-more-btn.22b46451.css.map */
