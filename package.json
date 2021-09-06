@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "sass": "^1.38.2"
   },
@@ -18,7 +19,6 @@
     "gh-pages": "^3.2.3",
     "handlebars": "^4.7.7",
     "js": "^0.1.0",
-    "parcel-plugin-handlebars-precompile": "^1.0.2",
     "pnotify": "^5.2.0",
     "templates": "^1.2.9",
     "throttle-debounce": "^3.0.1"
