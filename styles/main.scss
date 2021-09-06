@@ -10,7 +10,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: black;
     color: white;
-    transition: 0.4ms ease-in-out;
+    //transition: 0.4ms ease-in-out;
 }
 
 img {
@@ -33,4 +33,10 @@ a {
 p {
     margin-top: 0;
     margin-bottom: 0;
+}
+button {
+    cursor: pointer;
+}
+.overflow{
+    overflow: hidden;
 }

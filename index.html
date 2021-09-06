@@ -11,23 +11,31 @@
             rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.scss"/>
+    <link rel="stylesheet" href="styles/modal.scss"/>
     <link rel="stylesheet" href="styles/styles.scss"/>
     <link rel="stylesheet" href="styles/list.scss"/>
+    <link rel="stylesheet" href="styles/load-more-btn.scss"/>
 </head>
 <body>
 <div class="all_content">
-    <form class="search-form field js-search-form" id="search-form">
+    <form class="search-form js-search-form" id="search-form">
         <input
-                class="form__field"
+                class="input_field"
                 type="text"
                 name="query"
                 id="query"
                 autocomplete="off"
                 placeholder="Search images..."
         />
-        <label for="query" class="form__label">Search Images...</label>
+        <label for="query" class="input_label">Search Images...</label>
         <button type="submit" class="btn search-btn">
             <span class="material-icons">search</span>
+        </button>
+        <button type="button" class="btn btn-reset" data-action="reset">
+          <span class="material-icons">
+          undo
+          </span>
+            reset
         </button>
 
     </form>
@@ -36,7 +44,19 @@
     <ul id="gallery">
     </ul>
 </div>
-</body>
+<button type="button" class="btn btn-more " data-action="load-more">
+    <span class="label">Load more</span>
+</button>
 
+<div class="modal js-modal">
+    <div class="modal_overlay"></div>
+    <div class="modal_content">
+        <div class="img">
+            <img src="" alt="" class="img-card_image"/>
+        </div>
+    </div>
+    <button type="button" class="modal_button" data-action="close-modal"></button>
+</div>
+</body>
 <script src="./main.js"></script>
 </html>

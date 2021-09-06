@@ -1,28 +1,28 @@
 {{#each this}}
-        <li id="{{id}}" class="img-list-item" data-url="{{largeImageURL}}">
-            <a href="javascript:void(0)" class="img-list-link">
+        <li id="{{id}}" class="img-list" data-url="{{largeImageURL}}">
+            <a class="img-list-link">
                 <img src="{{webformatURL}}" alt="tags: {{tags}}" class="main-img"/>
             </a>
-            <div class="stats">
-                <p class="stats-item">
-                    <i class="material-icons icon--op">thumb_up</i>
-                    likes: {{likes}}
+            <div class="statistics">
+                <p class="statistics-item">
+                    <i class="material-icons icon">thumb_up</i>
+                   {{likes}}
                 </p>
-                <p class="stats-item">
-                    <i class="material-icons icon--op">visibility</i>
-                    views: {{views}}
+                <p class="statistics-item">
+                    <i class="material-icons icon">visibility</i>
+                    {{views}}
                 </p>
-                <p class="stats-item">
-                    <i class="material-icons icon--op">comment</i>
-                    comments: {{comments}}
+                <p class="statistics-item">
+                    <i class="material-icons icon">comment</i>
+                     {{comments}}
                 </p>
-                <p class="stats-item">
-                    <i class="material-icons icon--op">cloud_download</i>
-                    downloads: {{downloads}}
+                <p class="statistics-item">
+                    <i class="material-icons icon">cloud_download</i>
+                     {{downloads}}
                 </p>
-                <a href="{{pageURL}}" class="stats-item home-page-link" target="_blank">
-                    <i class="material-icons icon--op">home</i>
-                    home page
+                <a href="{{pageURL}}" class="statistics-item home-page-link" target="_blank">
+                    <i class="material-icons icon">home</i>
+                    link to home page
                 </a>
             </div>
         </li>

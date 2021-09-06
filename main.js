@@ -1,2 +1,6 @@
 import "/js/apiService"
 import "/js/render"
+import "/js/refs"
+import "/js/utils"
+import "/js/modal"
+import "/js/load-more-btn"

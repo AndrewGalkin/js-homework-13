@@ -1,10 +1,22 @@
-.gallery{
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-evenly;
+    animation: showGallery 2s linear forwards;
 }
 .result-section {
     display: flex;
     flex-direction: column;
 }
-
+@keyframes showGallery {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .img-list {
     display: grid;
     width: 100%;
@@ -14,76 +26,82 @@
     list-style: none;
     margin-left: auto;
     margin-right: auto;
-}
 
-.img-list-item {
+}
+@keyframes showLists {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.img-list {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 12px;
-    background-color: var(--bg-color);
-    border: 1px solid;
-    border-radius: 6px;
-    border-color: var(--main-color);
-    box-shadow: 0px 3px 8px 0px rgba(255, 255, 255, 0.411),
-    0px 2px 5px 0px rgba(255, 255, 255, 0.226),
-    0px 2px 3px -1px rgba(255, 255, 255, 0.137);
-    transition: transform var(--animation-duration) var(--timing-function),
-    background-color var(--animation-duration) var(--timing-function);
+    padding: 24px;
+    width: 30%;
+    background-color: black;
+    border-bottom: 2px solid white;
+    border-radius: 25px;
+    box-shadow: rgba(255, 127, 80, 0.6) 0 7px 29px 0;
+    transition: 0.4ms ease-in-out;
+    margin-bottom: 40px;
+    animation: showLists 2s linear forwards;
 }
 
-.img-list-item:hover {
-    background-color: var(--active-bg-color);
-    transform: scale(1.02);
-}
 
 .img-list-link {
-// pointer-events: none;
-    background-color: azure;
+    background-color: transparent;
     transform: scale(1);
-    transition: transform var(--animation-duration) var(--timing-function);
+    cursor: pointer;
+    //transition: 0.5s ease-in-out;
 }
 
 .main-img {
     display: block;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .img-list-link:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .home-page-link {
     text-decoration: none;
     transition: transform 50ms var(--timing-function);
+    width: 155px;
 }
 
 .home-page-link:hover {
     transform: scale(1.01);
+    color: coral;
 }
 
-.stats {
-    padding-top: 8px;
+.statistics {
+    padding-top: 10px;
+
 }
 
-.stats-item {
+.statistics-item {
     display: flex;
-    align-items: center;
-    padding: 2px;
-    color: var(--main-color);
+    padding: 4px;
+    color: white;
     font-size: 14px;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.icon--op {
+.icon {
     margin-right: 8px;
+    color: coral;
 }
 
 .result-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-}
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }

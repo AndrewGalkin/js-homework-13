@@ -24,10 +24,10 @@
     }
 }
 
-.form__field {
+.input_field {
     font-family: inherit;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 5px;
     border: 0;
     border-bottom: 2px solid white;
     outline: 0;
@@ -41,31 +41,32 @@
         color: transparent;
     }
 
-    &:placeholder-shown ~ .form__label {
+    &:placeholder-shown ~ .input_label {
         font-size: 1.3rem;
         cursor: text;
         top: 20px;
+        font-weight: 600;
     }
 }
 
-.form__label {
+.input_label {
     position: absolute;
     top: 0;
     display: block;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
     font-size: 1rem;
     color: white;
 }
 
-.form__field:focus {
-    ~ .form__label {
+.input_field:focus {
+    ~ .input_label {
         position: absolute;
         top: 0;
         display: block;
-        transition: 0.2s;
         font-size: 1rem;
         color: coral;
         font-weight:700;
+        transition: 0.3s ease-in-out;
     }
     padding-bottom: 6px;
     font-weight: 700;
